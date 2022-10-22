@@ -9,7 +9,7 @@ echo "Updating Packages"
 echo "###################################"
 echo
 
-sudo apt-get update && sudo apt update -y
+sudo apt-get update && sudo apt upgrade -y
 
 echo "###################################"
 echo "Installing Common Utilities"
