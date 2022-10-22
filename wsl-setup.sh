@@ -16,7 +16,7 @@ echo "Installing Common Utilities"
 echo "###################################"
 echo
 
-sudo apt-get install -y gnupg software-properties-common zip wget apt-transport-https git
+sudo apt-get install -y gnupg software-properties-common zip wget apt-transport-https git python3-venv python3-pip
 
 echo "###################################"
 echo "Installing Terraform"
@@ -65,5 +65,21 @@ echo
 sudo add-apt-repository ppa:deadsnakes/ppa -y
 sudo apt install python3.10 -y
 
+echo "###################################"
+echo "Installing .NET Core 6"
+echo "###################################"
+echo
 
+wget https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
+
+sudo apt-get update && sudo apt-get install -y dotnet-sdk-6.0
+
+echo "###################################"
+echo "Installing NVM"
+echo "###################################"
+echo
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
 
