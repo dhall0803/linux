@@ -63,12 +63,7 @@ echo "###################################"
 echo
 
 sudo add-apt-repository ppa:deadsnakes/ppa -y
-sudo apt install python3.10
+sudo apt install python3.10 -y
 
-echo "###################################"
-echo "Installing .NET Core 6 LTS"
-echo "###################################"
-echo
 
-sudo apt-get install -y dotnet6
 
