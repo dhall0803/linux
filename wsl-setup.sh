@@ -19,7 +19,7 @@ echo "Installing Common Utilities"
 echo "###################################"
 echo
 
-sudo apt-get install -y gnupg software-properties-common zip wget apt-transport-https git python3-venv python3-pip
+sudo apt-get install -y gnupg software-properties-common zip wget apt-transport-https git python3-venv python3-pip shellcheck
 
 echo
 echo "###################################"
